@@ -10,7 +10,8 @@ namespace ConsultationApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new ConsultationsListPage());
         }
 
         protected override void OnStart()
