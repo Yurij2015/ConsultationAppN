@@ -10,9 +10,6 @@ using Xamarin.Forms;
 
 namespace ConsultationApp
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
         Label connectionStateLbl;
@@ -45,7 +42,7 @@ namespace ConsultationApp
         }
 
         // обработка изменения состояния подключения
-        private void Current_ConnectivityChanged(object sender, CollectionChangeEventArgs e)
+        private void Current_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             CheckConnection();
         }
