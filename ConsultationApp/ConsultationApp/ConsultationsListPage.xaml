@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ConsultationApp.ConsultationsListPage" Title="Список записей на консультацию">
+             x:Class="ConsultationApp.ConsultationsPage" Title="Список записей на консультацию">
     <StackLayout>
         <Button Text="Добавить" Command="{Binding CreateConsultationCommand}" IsEnabled="{Binding IsLoaded}" />
         <ListView x:Name="consultationsList" ItemsSource="{Binding Consultations}"

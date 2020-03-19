@@ -10,10 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace ConsultationApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ConsultationsListPage : ContentPage
+    public partial class ConsultationsPage : ContentPage
     {
         ApplicationViewModel viewModel;
-        public ConsultationsListPage()
+        public ConsultationsPage()
         {
             InitializeComponent();
             viewModel = new ApplicationViewModel() { Navigation = this.Navigation };
