@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsultationApp
 {
-    class Consultant
+    public class Consultant
     {
         public int Id { get; set; }
         public string Name { get; set; }

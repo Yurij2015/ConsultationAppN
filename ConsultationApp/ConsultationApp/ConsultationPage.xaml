@@ -11,15 +11,12 @@
             <Label Text="Телефон" />
             <Entry Text="{Binding Path=Model.Phone}" FontSize="Medium" />
             <Label Text="Вопрос" />
-            <!--<Entry Text="{Binding Path=Model.Question}" FontSize="Medium" />-->
-            
-
-
+            <Entry Text="{Binding Path=Model.Question}" FontSize="Medium" />
         </StackLayout>
 
         <StackLayout Margin="20">
             <Label Text="Выбор консультанта" FontAttributes="Bold" HorizontalOptions="Center" />
-            <Picker Title="Вы выбрали" ItemsSource="{Binding ConsultantList}" SelectedItem="{Binding Model.Question, Mode=TwoWay}" />
+            <Picker Title="Вы выбрали" ItemsSource="{Binding ConsultantList}" SelectedItem="{Binding Model.Consultant, Mode=TwoWay}" />
         </StackLayout>
 
 

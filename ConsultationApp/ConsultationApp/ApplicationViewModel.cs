@@ -63,7 +63,9 @@ namespace ConsultationApp
                         Name = value.Name,
                         Email = value.Email,
                         Phone = value.Phone,
-                        Question = value.Question
+                        Question = value.Question,
+                        Consultant = value.Consultant
+
                     };
                     selectedConsultation = null;
                     OnPropertyChanged("SelectedConsultation");

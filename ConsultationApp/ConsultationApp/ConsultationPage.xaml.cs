@@ -25,9 +25,8 @@ namespace ConsultationApp
         {
             get
             {
-                return new List<string> { "USA", "Germany", "England" };
+                return new List<string> { "Макаров О. П.", "Иванов И. Ю.", "Васильев Г. О", "Маркова И. Ю.", "выберу позже" };
             }
         }
-
     }
 }
