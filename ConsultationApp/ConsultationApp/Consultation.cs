@@ -10,6 +10,7 @@ namespace ConsultationApp
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+        public string Question { get; set; }
 
         public override bool Equals(object obj)
         {

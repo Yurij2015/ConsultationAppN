@@ -12,8 +12,8 @@ namespace ConsultationApp
     public partial class ConsultationPage : ContentPage
     {
         public Consultation Model { get; private set; }
-        public ApplicationViewModel ViewModel { get; private set; }
-        public ConsultationPage(Consultation model, ApplicationViewModel viewModel)
+        public ConsultationViewModel ViewModel { get; private set; }
+        public ConsultationPage(Consultation model, ConsultationViewModel viewModel)
         {
             InitializeComponent();
             Model = model;

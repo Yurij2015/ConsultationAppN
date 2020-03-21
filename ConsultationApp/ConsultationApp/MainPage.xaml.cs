@@ -25,13 +25,26 @@ namespace ConsultationApp
             };
             toAboutPageBtn.Clicked += ToAboutPage;
 
-            Content = new StackLayout { Children = { toCommonPageBtn, toAboutPageBtn } };
+            Button toConsultantsPageBtn = new Button
+            {
+                Text = "Список консультантов",
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+            toConsultantsPageBtn.Clicked += ToConsultantsPage;
+
+            Content = new StackLayout { Children = { toCommonPageBtn, toAboutPageBtn, toConsultantsPageBtn } };
 
         }
 
         private async void ToAboutPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AboutPage());
+        }
+
+        private async void ToConsultantsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ConsultantsListPage());
         }
 
         private async void ToCommonPage(object sender, EventArgs e)

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsultationApp.ConsultantsListPage" Title="Список консультантов">
+    <StackLayout>
+        <ListView x:Name="consultationsList" ItemsSource="{Binding Consultants}" HasUnevenRows="True" ItemTapped="OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Spacing="8">
+                                <Label Text="{Binding Name}" FontSize="Medium" />
+                                <Label Text="{Binding Email}" FontSize="Small" />
+                                <Label Text="{Binding Phone}" FontSize="Small" />
+                                <Label Text="{Binding Portfolio}" FontSize="Small" />
+                                <Label Text="{Binding Services}" FontSize="Small" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

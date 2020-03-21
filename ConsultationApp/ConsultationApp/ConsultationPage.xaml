@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ConsultationApp.ConsultationPage" Title="Информация о">
+             x:Class="ConsultationApp.ConsultationPage" Title="Создать заявку">
     <StackLayout>
         <StackLayout>
             <Label Text="Имя" />
@@ -10,10 +10,11 @@
             <Entry Text="{Binding Path=Model.Email}" FontSize="Medium" />
             <Label Text="Телефон" />
             <Entry Text="{Binding Path=Model.Phone}" FontSize="Medium" />
+            <Label Text="Вопрос" />
+            <Entry Text="{Binding Path=Model.Question}" FontSize="Medium" />
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Text="Сохранить" Command="{Binding ViewModel.SaveConsultationCommand}" CommandParameter="{Binding Model}" />
-            <Button Text="Удалить" Command="{Binding ViewModel.DeleteConsultationCommand}" CommandParameter="{Binding Model}" />
             <Button Text="Назад" Command="{Binding Path=ViewModel.BackCommand}" />
         </StackLayout>
     </StackLayout>

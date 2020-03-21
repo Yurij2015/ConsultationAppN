@@ -12,11 +12,11 @@ namespace ConsultationApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ConsultationsPage : ContentPage
     {
-        ApplicationViewModel viewModel;
+        ConsultationViewModel viewModel;
         public ConsultationsPage()
         {
             InitializeComponent();
-            viewModel = new ApplicationViewModel() { Navigation = this.Navigation };
+            viewModel = new ConsultationViewModel() { Navigation = this.Navigation };
             BindingContext = viewModel;
         }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsultationApp
 {
-    public class ApplicationViewModel : INotifyPropertyChanged
+    public class ConsultationViewModel : INotifyPropertyChanged
     {
         bool initialized = false;   // была ли начальная инициализация
         Consultation selectedConsultation;  // выбранная консультация
@@ -40,7 +40,7 @@ namespace ConsultationApp
             get { return !isBusy; }
         }
 
-        public ApplicationViewModel()
+        public ConsultationViewModel()
         {
             Consultations = new ObservableCollection<Consultation>();
             IsBusy = false;
@@ -62,7 +62,8 @@ namespace ConsultationApp
                         Id = value.Id,
                         Name = value.Name,
                         Email = value.Email,
-                        Phone = value.Phone
+                        Phone = value.Phone,
+                        Question = value.Question
                     };
                     selectedConsultation = null;
                     OnPropertyChanged("SelectedConsultation");

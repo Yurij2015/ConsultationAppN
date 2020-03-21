@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ConsultationApp.ConsultationsPage" Title="Список записей на консультацию">
+             x:Class="ConsultationApp.ConsultationsPage" Title="Последние записи">
     <StackLayout>
-        <Button Text="Добавить" Command="{Binding CreateConsultationCommand}" IsEnabled="{Binding IsLoaded}" />
+        <Button Text="Запись на косультацию" Command="{Binding CreateConsultationCommand}" IsEnabled="{Binding IsLoaded}" />
         <ListView x:Name="consultationsList" ItemsSource="{Binding Consultations}"
               SelectedItem="{Binding SelectedConsultation, Mode=TwoWay}" HasUnevenRows="True">
             <ListView.ItemTemplate>
@@ -12,8 +12,7 @@
                         <ViewCell.View>
                             <StackLayout>
                                 <Label Text="{Binding Name}" FontSize="Medium" />
-                                <Label Text="{Binding Email}" FontSize="Small" />
-                                <Label Text="{Binding Phone}" FontSize="Small" />
+                                <Label Text="{Binding Question}" FontSize="Small" />
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>
