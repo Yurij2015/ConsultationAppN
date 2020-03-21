@@ -58,5 +58,7 @@ namespace ConsultationApp
             IsBusy = false;
             initialized = true;
         }
+
+
     }
 }

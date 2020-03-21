@@ -20,5 +20,14 @@ namespace ConsultationApp
             ViewModel = viewModel;
             this.BindingContext = this;
         }
+
+        public IList<string> ConsultantList
+        {
+            get
+            {
+                return new List<string> { "USA", "Germany", "England" };
+            }
+        }
+
     }
 }

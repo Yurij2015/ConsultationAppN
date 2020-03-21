@@ -5,7 +5,7 @@
     <StackLayout>
         <Button Text="Запись на косультацию" Command="{Binding CreateConsultationCommand}" IsEnabled="{Binding IsLoaded}" />
         <ListView x:Name="consultationsList" ItemsSource="{Binding Consultations}"
-              SelectedItem="{Binding SelectedConsultation, Mode=TwoWay}" HasUnevenRows="True">
+               HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
