@@ -31,7 +31,7 @@ namespace ConsultationApp
         {
             Consultant selectedConsultant = e.Item as Consultant;
             if (selectedConsultant != null)
-                await DisplayAlert("Консультант", $"{selectedConsultant.Name} - {selectedConsultant.Services}", "OK");
+                await DisplayAlert("Консультант\n", $"{selectedConsultant.Name}\n{selectedConsultant.Phone}\n{selectedConsultant.Email}\n{selectedConsultant.Services}\n{selectedConsultant.Portfolio}", "OK");
         }
 
     }
