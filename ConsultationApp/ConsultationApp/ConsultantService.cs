@@ -9,12 +9,16 @@ namespace ConsultationApp
 {
     class ConsultantService
     {
-        const string Url = "http://192.168.0.106:3000/api/consultants/";
+        const string Url = "http://192.168.0.34:3000/api/consultants/";
         // настройка клиента
         private HttpClient GetConsultant()
         {
             HttpClient client = new HttpClient();
+
             client.DefaultRequestHeaders.Add("Accept", "application/json");
+
+
+
             return client;
         }
 
